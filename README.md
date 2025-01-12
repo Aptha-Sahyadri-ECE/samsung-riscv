@@ -89,6 +89,12 @@ The image displays the content of a C program named sum.c
 
 
 
+
+<details>
+<summary><B>Task 2:</b> Task is to execute simple program using RISC-V and debug O1 and Ofast instructions in our machine.</summary>
+  <br>
+
+
   
  
  
