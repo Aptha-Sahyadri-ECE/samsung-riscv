@@ -348,7 +348,6 @@ This document contains 15 unique RISC-V instructions from the disassembly, their
 - **Binary**: `0000000 00001 01000 100 01000 0110011`
 - **32-bit Hex**: `0x00104133`
 
----
 </details>
 
 
