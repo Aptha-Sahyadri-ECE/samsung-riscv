@@ -219,11 +219,140 @@ We use the command spike -d pk filename.o for debugging.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+<details>
+<summary><B>Task 3:</b> Task is to find  15 unique RISC-V instructions from the disassembly, their assembly representation, binary patterns, and corresponding 32-bit hexadecimal instructions.</summary>
+  <br>
 
 
+# RISC-V Instructions
+
+This document contains 15 unique RISC-V instructions from the disassembly, their assembly representation, binary patterns, and corresponding 32-bit hexadecimal instructions.
+
+---
+
+## Instruction 1: `lui`
+- **Assembly**: `lui a0, 0x21357`
+- **Type**: U-Type
+- **Binary**: `00100001001101010111 01000 0110111`
+- **32-bit Hex**: `0x21357837`
+
+---
+
+## Instruction 2: `addi`
+- **Assembly**: `addi sp, sp, -16`
+- **Type**: I-Type
+- **Binary**: `111111111111 01010 000 01010 0010011`
+- **32-bit Hex**: `0xFFF00513`
+
+---
+
+## Instruction 3: `li`
+- **Assembly**: `li a4, 24`
+- **Type**: I-Type
+- **Binary**: `000000001100 01001 000 01100 0010011`
+- **32-bit Hex**: `0x01800593`
+
+---
+
+## Instruction 4: `add`
+- **Assembly**: `add a0, a0, a1`
+- **Type**: R-Type
+- **Binary**: `0000000 00001 01000 000 01000 0110011`
+- **32-bit Hex**: `0x00104133`
+
+---
+
+## Instruction 5: `jal`
+- **Assembly**: `jal ra, <printf>`
+- **Type**: J-Type
+- **Binary**: `00000000100010100100 00001 1101111`
+- **32-bit Hex**: `0x000A807F`
+
+---
+
+## Instruction 6: `ld`
+- **Assembly**: `ld ra, 8(sp)`
+- **Type**: I-Type
+- **Binary**: `000000000100 01010 011 00001 0000011`
+- **32-bit Hex**: `0x00828083`
+
+---
+
+## Instruction 7: `sd`
+- **Assembly**: `sd ra, 8(sp)`
+- **Type**: S-Type
+- **Binary**: `0000000 00001 01010 011 00000 0100011`
+- **32-bit Hex**: `0x0082A023`
+
+---
+
+## Instruction 8: `ret`
+- **Assembly**: `ret`
+- **Type**: I-Type (alias for `jalr`)
+- **Binary**: `000000000000 00001 000 00000 1100111`
+- **32-bit Hex**: `0x00008067`
+
+---
+
+## Instruction 9: `auipc`
+- **Assembly**: `auipc gp, 0x10000`
+- **Type**: U-Type
+- **Binary**: `0001000000000000 00100 0010111`
+- **32-bit Hex**: `0x10000137`
+
+---
+
+## Instruction 10: `sub`
+- **Assembly**: `sub a0, a0, a1`
+- **Type**: R-Type
+- **Binary**: `0100000 00001 01000 000 01000 0110011`
+- **32-bit Hex**: `0x40104133`
+
+---
+
+## Instruction 11: `beq`
+- **Assembly**: `beq a0, a1, <offset>`
+- **Type**: B-Type
+- **Binary**: `0000000 00001 01000 000 00000 1100011`
+- **32-bit Hex**: `0x00104263`
+
+---
+
+## Instruction 12: `j`
+- **Assembly**: `j <offset>`
+- **Type**: J-Type (alias for `jal x0, <offset>`)
+- **Binary**: `000000000000 <imm[20:1]> 00000 1101111`
+- **32-bit Hex**: `<computed value>`
+
+---
+
+## Instruction 13: `and`
+- **Assembly**: `and a0, a0, a1`
+- **Type**: R-Type
+- **Binary**: `0000000 00001 01000 111 01000 0110011`
+- **32-bit Hex**: `0x00107133`
+
+---
+
+## Instruction 14: `or`
+- **Assembly**: `or a0, a0, a1`
+- **Type**: R-Type
+- **Binary**: `0000000 00001 01000 110 01000 0110011`
+- **32-bit Hex**: `0x00106133`
+
+---
+
+## Instruction 15: `xor`
+- **Assembly**: `xor a0, a0, a1`
+- **Type**: R-Type
+- **Binary**: `0000000 00001 01000 100 01000 0110011`
+- **32-bit Hex**: `0x00104133`
+
+---
+</details>
 
 
-
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
